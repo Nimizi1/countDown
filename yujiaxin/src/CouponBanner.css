@@ -1,0 +1,51 @@
+.banner {
+  background-size: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.banner .time {
+  height: 50px;
+  color: white;
+  position: absolute;
+}
+.banner .time span {
+  color: black;
+  width: 30px;
+  height: 30px;
+  background-color: #d8d4ff;
+  text-align: center;
+  display: inline-block;
+  line-height: 30px;
+  margin: 0 5px;
+}
+@media screen and (max-width: 740px) {
+  .banner {
+    height: 600px;
+    width: 500px;
+    background-image: url(pic2.png);
+  }
+  .banner .time {
+    left: 10%;
+    bottom: 40%;
+  }
+  .banner .time span {
+    color: black;
+    width: 30px;
+    height: 30px;
+    background-color: #d8d4ff;
+    text-align: center;
+    display: inline-block;
+    line-height: 30px;
+    margin: 0 5px;
+  }
+}
+@media screen and (min-width: 740px) {
+  .banner {
+    height: 300px;
+    background-image: url(pic1.png);
+  }
+  .banner .time {
+    right: 9%;
+    top: 5%;
+  }
+}
